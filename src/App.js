@@ -9,6 +9,7 @@ import { BrowserRouter } from 'react-router-dom';
 import Header from './components/header/header.component';
 import Internet from './pages/internet/internet.component';
 
+
 function App() {
   return (
     <div>

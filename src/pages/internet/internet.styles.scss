@@ -1,5 +1,62 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(83, 158, 187);
+}
+
+.block-0 {
+    display:flex;
+    flex-direction: column;
+}
+
+.block-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    float: left;
+    width: 25%;
+    padding: 40px;
+}
+
 .block-2 {
     position: relative;
-    margin: auto !important;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    float: left;
+    width: 25%;
+    bottom: 262px;
+    left: 25%;
+    padding: 40px;
 }
+
+.block-3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    float: left;
+    width: 25%;
+    bottom: 524px;
+    left: 50%;
+    padding: 40px;
+
+}
+
+.block-4 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    float: left;
+    width: 25%;
+    bottom: 786px;
+    left: 75%;
+    padding: 40px;
+}
+
+.p {
+    width: 500px;
+}
+
+  
