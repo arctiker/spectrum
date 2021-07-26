@@ -1,9 +1,15 @@
 import React from 'react';
 
-import './homepage.styles.scss';
 
 const Homepage = () => (
-<div>or3a tasman</div>
+<div className=''>
+    <div className='home-container'>
+        <div>
+            wala wahad wala meyya
+        </div>
+        
+    </div>
+</div>
 );
 
 export default Homepage;

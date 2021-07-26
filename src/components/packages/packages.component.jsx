@@ -1,4 +1,6 @@
 import React from 'react';
+import Order from '../order/order.component';
+import { Button } from '../order/order.component';
 
 const Packages = () => (
     
@@ -7,37 +9,37 @@ const Packages = () => (
             <div className='menu-item'>
                 <div className='content'>
                     <h1 className='title'>4MB HIGH</h1>
-                    <span className='subtitle'>ORDER SERVICE</span>
+                    <Button onClick={Order} className='button' >ORDER SERVICE</Button>
                 </div>
             </div> 
             <div className='menu-item'>
                 <div className='content'>
                     <h1 className='title'>5MB HIGH</h1>
-                    <span className='subtitle'>ORDER SERVICE</span>
+                    <Button onClick={Order} className='button'>ORDER SERVICE</Button>
                 </div>
             </div> 
             <div className='menu-item'>
                 <div className='content'>
                     <h1 className='title'>6MB HIGH</h1>
-                    <span className='subtitle'>ORDER SERVICE</span>
+                    <Button onClick={Order} className='button'>ORDER SERVICE</Button>
                 </div>
             </div> 
             <div className='menu-item'>
                 <div className='content'>
                     <h1 className='title'>7MB HIGH</h1>
-                    <span className='subtitle'>ORDER SERVICE</span>
+                    <Button onClick={Order} className='button'>ORDER SERVICE</Button>
                 </div>
             </div> 
             <div className='menu-item'>
                 <div className='content'>
                     <h1 className='title'>8MB HIGH</h1>
-                    <span className='subtitle'>ORDER SERVICE</span>
+                    <Button onClick={Order} className='button'>ORDER SERVICE</Button>
                 </div>
             </div> 
             <div className='menu-item'>
                 <div className='content'>
                     <h1 className='title'>9MB HIGH</h1>
-                    <span className='subtitle'>ORDER SERVICE</span>
+                    <Button onClick={Order} className='button'>ORDER SERVICE</Button>
                 </div>
             </div> 
         </div>

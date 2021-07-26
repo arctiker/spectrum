@@ -8,11 +8,13 @@ import Services from './pages/services/services.component';
 import { BrowserRouter } from 'react-router-dom';
 import Header from './components/header/header.component';
 import Internet from './pages/internet/internet.component';
+import LoginForm from './pages/signin-out/LoginForm';
 
 
 function App() {
+  
   return (
-    <div>
+    <div className='App'>
       <BrowserRouter>
       <Header />
       <Switch>
@@ -20,6 +22,7 @@ function App() {
         <Route path='/About' component={About} />
         <Route path='/Services' component={Services} />
         <Route path='/internet' component={Internet} />
+        <Route path='/LoginForm' component={LoginForm} />
       </Switch>
       </BrowserRouter>
     </div>

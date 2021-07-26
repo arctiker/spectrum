@@ -4,7 +4,8 @@ import './about.styles.scss';
 
 const About = () => (
 
-    <div>Contact info
+    <div className='about'>
+        <div>Contact Info</div>
         <div>Main Office Location</div>
     </div>
 
