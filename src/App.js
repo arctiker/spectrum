@@ -5,7 +5,6 @@ import './App.css';
 import Homepage from './pages/homepage/homepage.component';
 import About from './pages/about/about.component';
 import Services from './pages/services/services.component';
-import { BrowserRouter } from 'react-router-dom';
 import Header from './components/header/header.component';
 import Internet from './pages/internet/internet.component';
 import LoginForm from './pages/signin-out/LoginForm';
@@ -15,7 +14,6 @@ function App() {
   
   return (
     <div className='App'>
-      <BrowserRouter>
       <Header />
       <Switch>
         <Route exact path ='/' component={Homepage} />
@@ -24,7 +22,6 @@ function App() {
         <Route path='/internet' component={Internet} />
         <Route path='/LoginForm' component={LoginForm} />
       </Switch>
-      </BrowserRouter>
     </div>
     
   );

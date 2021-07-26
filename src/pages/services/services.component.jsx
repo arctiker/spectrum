@@ -5,9 +5,10 @@ import './services.styles.scss';
 
 
 
-const Services =() => (
+const Services =() => {
+    return(
 <Packages />
-    
-);
+    )   
+}
 
 export default Services;

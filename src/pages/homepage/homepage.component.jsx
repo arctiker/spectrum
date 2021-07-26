@@ -1,15 +1,15 @@
 import React from 'react';
+import './homepage.styles.scss';
 
 
-const Homepage = () => (
-<div className=''>
-    <div className='home-container'>
-        <div>
-            wala wahad wala meyya
+const Homepage = () => {
+    return (
+        <div className='home-container'>
+                <div>
+                    wala wahad wala meyya
+                </div>
         </div>
-        
-    </div>
-</div>
-);
+    );
+}
 
 export default Homepage;

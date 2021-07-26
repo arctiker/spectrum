@@ -1,50 +1,46 @@
-import React from 'react';
-import Order from '../order/order.component';
-import { Button } from '../order/order.component';
+import React, {useState} from 'react';
+import { Button } from '../Button';
 
-const Packages = () => (
+const PackageItem = ({title, Order2}) => {
+  
     
+    return (
+        <div className='menu-item'>
+            <div className='content'>
+                <h1 className='title'>{title} MB HIGH</h1>
+                <Button onClick={Order2} className='button' >ORDER SERVICE</Button>
+            </div>
+        </div> 
+    )
+}
+
+const Packages = () => {
+    const i = [4,5,6,7,8,9]
+    const [message, setMessage] = useState("Please Click")
+    const [show, setShow] = useState(true)
+
+    const Order = () => {
+        console.log("clicked")
+        setShow(!show)
+     
+    } 
+return(
     <div className='homepage'>
         <div className='service'>
-            <div className='menu-item'>
-                <div className='content'>
-                    <h1 className='title'>4MB HIGH</h1>
-                    <Button onClick={Order} className='button' >ORDER SERVICE</Button>
-                </div>
-            </div> 
-            <div className='menu-item'>
-                <div className='content'>
-                    <h1 className='title'>5MB HIGH</h1>
-                    <Button onClick={Order} className='button'>ORDER SERVICE</Button>
-                </div>
-            </div> 
-            <div className='menu-item'>
-                <div className='content'>
-                    <h1 className='title'>6MB HIGH</h1>
-                    <Button onClick={Order} className='button'>ORDER SERVICE</Button>
-                </div>
-            </div> 
-            <div className='menu-item'>
-                <div className='content'>
-                    <h1 className='title'>7MB HIGH</h1>
-                    <Button onClick={Order} className='button'>ORDER SERVICE</Button>
-                </div>
-            </div> 
-            <div className='menu-item'>
-                <div className='content'>
-                    <h1 className='title'>8MB HIGH</h1>
-                    <Button onClick={Order} className='button'>ORDER SERVICE</Button>
-                </div>
-            </div> 
-            <div className='menu-item'>
-                <div className='content'>
-                    <h1 className='title'>9MB HIGH</h1>
-                    <Button onClick={Order} className='button'>ORDER SERVICE</Button>
-                </div>
-            </div> 
+            {
+                i.map( s =>
+                <PackageItem title={s} Order2={Order}/>
+                )
+            }
         </div>
+       { show === true ?
+        <p>Click</p>
+        :
+        <p>Thank you</p>
+       }
     </div>
 
 );
+}
 
 export default Packages;

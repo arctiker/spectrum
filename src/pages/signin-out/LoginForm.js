@@ -10,6 +10,10 @@ function LoginForm() {
                     <label htmlFor='name'>Name:</label>
                     <input type='text' name ='name' id='name' />
                 </div>
+                <div className='form-group'>
+                    <label htmlFor='name'>Name:</label>
+                    <input type='text' name ='name' id='name' />
+                </div>
                  
             </div>
         </form>

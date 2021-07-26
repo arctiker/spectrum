@@ -5,14 +5,12 @@ import { Link } from 'react-router-dom';
 
 const Header = () => (
     <div className='header'>
-        <Link className='home-container' to='/'>
-            <div className='home-page'>Home</div>
-        </Link>
-        <div className='options'>
-            <Link className='option' to='/internet'>Internet</Link>
-            <Link className='option' to='/about'>About</Link>
-            <Link className='option' to='/services'>Services</Link>
-        </div>    
+        <Link className='home_link' to='/'> Home </Link>
+        <div className='services'>
+        <Link className='option' to='/internet'>Internet</Link>
+        <Link className='option' to='/about'>About</Link>
+        <Link  to='/services'>Services</Link>
+        </div>
     </div>
 );
 
