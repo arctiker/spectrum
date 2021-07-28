@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Button } from '../Button';
+import { Button } from './packages-button';
 
 const PackageItem = ({title, Order2}) => {
   
@@ -16,11 +16,9 @@ const PackageItem = ({title, Order2}) => {
 
 const Packages = () => {
     const i = [4,5,6,7,8,9]
-    const [message, setMessage] = useState("Please Click")
     const [show, setShow] = useState(true)
 
     const Order = () => {
-        console.log("clicked")
         setShow(!show)
      
     } 
